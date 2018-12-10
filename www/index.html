@@ -68,7 +68,7 @@
     function updateData() {
       UTdata.fetch()
       .then(function(uTdata){
-        var value = $("#updata").val();
+        var value = parseInt($("#updata").val());
         uTdata.set(key,value);
         return uTdata.updata();
       })
